@@ -3,6 +3,8 @@
 ## Author
 Rownak Jahan Chowdhury
 
+Applied Cryptography Project
+
 ---
 
 ## Overview
