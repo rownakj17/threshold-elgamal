@@ -61,4 +61,29 @@ Then we combine partial decryptions using **Lagrange weights** so that:
 ```bash
 make
 ./threshold_elgamal
+```
+
+## Expected Output (High Level)
+- Confirms parameters loaded  
+- Confirms threshold setup (t = 2, n = 5)  
+- Confirms partial decryptions computed  
+- Confirms threshold result matches direct result  
+- Prints the recovered plaintext message  
+
+---
+
+## File Structure
+- `main.cpp` : runs all parts (setup → sharing → threshold decrypt → AES test)  
+- `params.cpp/.h` : loads `p`, `q`, `g` parameters  
+- `shamir.cpp/.h` : split and reconstruct secret using Shamir sharing  
+- `lagrange.cpp/.h` : computes Lagrange weights at `x = 0`  
+- `threshold.cpp/.h` : partial decrypt + combine partials  
+- `crypto.cpp/.h` : SHA-256 key derivation + AES-256-GCM encrypt/decrypt  
+- `Makefile` : build instructions  
+
+---
+
+## Notes
+- This is a learning/demo implementation for coursework.  
+- Real-world secure systems require careful key handling, validation, and constant-time operations.
 
