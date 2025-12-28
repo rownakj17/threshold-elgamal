@@ -87,3 +87,9 @@ make
 - This is a learning/demo implementation for coursework.  
 - Real-world secure systems require careful key handling, validation, and constant-time operations.
 
+---
+
+## Project Specification
+
+**Project Specification (Provided by Instructor):**  
+Project_Description.docx
